@@ -1,0 +1,11 @@
+<div class="container text-center d-flex">
+  <h1 class=" center-block display-2"><b> Ordering Management System</b></h1>
+</div>
+
+<div class="input-group">
+  <form method="post" action="{% url 'search_item' %}">
+    {% csrf_token %}
+    <input type="text" name="unique_code" class="form-control" placeholder="Enter Unique Code">
+    <button class="btn btn-outline-primary" type="submit">Search</button>
+</div>
+
